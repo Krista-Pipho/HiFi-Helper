@@ -1,4 +1,4 @@
-# Genome 2024
+# HiFi-Helper
 ### Authors: Krista Pipho, Angelina Huang, Avi Heyman, Daniel Levin, and Shriya Minocha
 
 
@@ -32,8 +32,8 @@ wget -qO- https://pixi.sh/install.sh | sh
 ### Step 1: Install the pipeline from github
 
 ```
-git clone https://github.com/Krista-Pipho/genome_2024.git
-cd genome_2024
+git clone https://github.com/Krista-Pipho/HiFi-Helper.git
+cd HiFi-Helper
 ```
 
 ### Step 2: Test the pipeline 
@@ -90,8 +90,8 @@ sbatch launch.sh
 
 ### Step 4: Assess outputs
 
-1. The de-novo assembly can be found in the main folder (genome_2024) under the name sample.gfa
-2. The primary results summary can be found in the main folder (genome 2024) under the name sample_ref_assembly_summary.html
+1. The de-novo assembly can be found in the main folder (HiFi-Helper) under the name sample.gfa
+2. The primary results summary can be found in the main folder (HiFi-Helper) under the name sample_ref_assembly_summary.html
 3. End results from individual rules are collected in results/sample
 4. .coords and .coords.idx files for interactive structural visualization can found in results/sample and visualized using https://dot.sandbox.bio/
 5. More extensive outputs can be found in analysis/sample 
