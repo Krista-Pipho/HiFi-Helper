@@ -354,7 +354,7 @@ rule render_summary_rmd:
 		"results/{all_samples[0]}/benchmark/{all_samples[0]}_{all_samples[1]}_render_summary.txt"
 	shell:
 		"""
-		pixi run Rscript -e "rmarkdown::render('assembly_pipeline_summary.Rmd', output_file='{output.summary}', param=list(primary_genome='{all_samples[0]}',compare_genome='{all_samples[1]}'))"
+		pixi run Rscript -e "rmarkdown::render('assembly_pipeline_summary.Rmd', clean = FALSE, output_file='{output.summary}', param=list(primary_genome='{all_samples[0]}',compare_genome='{all_samples[1]}'))"
 		"""
 
 rule benchmark:
